@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Club Events</title>
+  <title>SSIT Events</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -16,10 +15,12 @@
     }
     h1 {
       font-size: 28px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
     .link-btn {
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 15px; /* space between image and text */
       margin: 15px auto;
       padding: 15px;
       width: 80%;
@@ -35,12 +36,30 @@
       background: #f1f1f1;
       transform: scale(1.05);
     }
+    .link-btn img {
+      width: 50px;    /* square size */
+      height: 50px;   /* square size */
+      object-fit: cover; /* maintain square shape without stretching */
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
-  <h1>✨ IEEE SSIT Club Events ✨</h1>
-  <a href="https://events.phaseshift.in/events/SSIPBG" class="link-btn" target="_blank">Event 1: Pokeverse</a>
-  <a href="https://events.phaseshift.in/events/SSISAT" class="link-btn" target="_blank">Event 2: Sustain-a-town</a>
-  <a href="https://events.phaseshift.in/events/SSIGIN" class="link-btn" target="_blank">Event 3: Greenovate-Ideathon</a>
+  <h1>IEEE SSIT Events for PhaseShift 2025</h1>
+
+  <a href="https://events.phaseshift.in/events/SSIGIN" class="link-btn" target="_blank">
+    <img src="images/greenovate.png" alt="Greenovate-Ideathon">
+    Event 1: Greenovate-Ideathon
+  </a>
+
+  <a href="https://events.phaseshift.in/events/SSISAT" class="link-btn" target="_blank">
+    <img src="images/sustain-a-town.png" alt="Sustain-a-town">
+    Event 2: Sustain-a-town
+  </a>
+
+  <a href="https://events.phaseshift.in/events/SSIPBG" class="link-btn" target="_blank">
+    <img src="images/pokeverse.png" alt="Pokeverse">
+    Event 3: Pokeverse
+  </a>
 </body>
 </html>
